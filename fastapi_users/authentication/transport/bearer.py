@@ -1,7 +1,7 @@
 from fastapi import Response, status
 from fastapi.responses import JSONResponse
 from fastapi.security import OAuth2PasswordBearer
-from pydantic import BaseModel
+from pydantic.v1 import BaseModel
 
 from fastapi_users.authentication.transport.base import (
     Transport,

@@ -1,11 +1,11 @@
 from typing import Any, Dict, Generic, List, Optional, Type, TypeVar
 
-from pydantic import BaseModel, ConfigDict, EmailStr
+from pydantic.v1 import BaseModel, ConfigDict, EmailStr
 from pydantic.version import VERSION as PYDANTIC_VERSION
 
 from fastapi_users import models
 
-PYDANTIC_V2 = PYDANTIC_VERSION.startswith("2.")
+PYDANTIC_V2 = False # PYDANTIC_VERSION.startswith("2.")
 
 SCHEMA = TypeVar("SCHEMA", bound=BaseModel)
 

@@ -4,7 +4,7 @@ import jwt
 from fastapi import APIRouter, Depends, HTTPException, Query, Request, status
 from httpx_oauth.integrations.fastapi import OAuth2AuthorizeCallback
 from httpx_oauth.oauth2 import BaseOAuth2, OAuth2Token
-from pydantic import BaseModel
+from pydantic.v1 import BaseModel
 
 from fastapi_users import models, schemas
 from fastapi_users.authentication import AuthenticationBackend, Authenticator, Strategy

@@ -1,7 +1,7 @@
 from enum import Enum
 from typing import Dict, Union
 
-from pydantic import BaseModel
+from pydantic.v1 import BaseModel
 
 
 class ErrorModel(BaseModel):
