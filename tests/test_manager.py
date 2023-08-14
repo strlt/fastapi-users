@@ -2,7 +2,7 @@ from typing import Callable
 
 import pytest
 from fastapi.security import OAuth2PasswordRequestForm
-from pydantic import UUID4
+from pydantic.v1 import UUID4
 from pytest_mock import MockerFixture
 
 from fastapi_users.exceptions import (

@@ -1,5 +1,5 @@
 from fastapi import APIRouter, Body, Depends, HTTPException, Request, status
-from pydantic import EmailStr
+from pydantic.v1 import EmailStr
 
 from fastapi_users import exceptions, models
 from fastapi_users.manager import BaseUserManager, UserManagerDependency

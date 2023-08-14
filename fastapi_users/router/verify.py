@@ -1,7 +1,7 @@
 from typing import Type
 
 from fastapi import APIRouter, Body, Depends, HTTPException, Request, status
-from pydantic import EmailStr
+from pydantic.v1 import EmailStr
 
 from fastapi_users import exceptions, models, schemas
 from fastapi_users.manager import BaseUserManager, UserManagerDependency

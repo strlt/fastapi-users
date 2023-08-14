@@ -146,7 +146,7 @@ You now need to define a proper User model using Beanie.
     ```py
     import uuid
 
-    from pydantic import Field
+    from pydantic.v1 import Field
 
 
     class User(BeanieBaseUser[uuid.UUID]):

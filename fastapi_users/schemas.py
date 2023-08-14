@@ -1,6 +1,6 @@
 from typing import Generic, List, Optional, TypeVar
 
-from pydantic import BaseModel, EmailStr
+from pydantic.v1 import BaseModel, EmailStr
 
 from fastapi_users import models
 

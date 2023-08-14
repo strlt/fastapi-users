@@ -2,7 +2,7 @@ from datetime import datetime, timedelta
 from typing import Any, Dict, List, Optional, Union
 
 import jwt
-from pydantic import SecretStr
+from pydantic.v1 import SecretStr
 
 SecretType = Union[str, SecretStr]
 JWT_ALGORITHM = "HS256"

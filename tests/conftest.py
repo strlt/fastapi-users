@@ -19,7 +19,7 @@ import pytest
 from asgi_lifespan import LifespanManager
 from fastapi import FastAPI, Response
 from httpx_oauth.oauth2 import OAuth2
-from pydantic import UUID4, SecretStr
+from pydantic.v1 import UUID4, SecretStr
 from pytest_mock import MockerFixture
 
 from fastapi_users import exceptions, models, schemas
